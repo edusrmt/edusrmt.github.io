@@ -53,14 +53,11 @@
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-	    						<span class="ion-ios-play play"></span>
-	    					</a>
 		          	<div class="text">
 		          		<span class="subheading">Oi</span>
 			            <h1 class="mb-4 mt-3">Sou <span>Eduardo Sarmento</span></h1>
 			            <h2 class="mb-4">Desenvolvo Interfaces<br>& Jogos</h2>
-			            <p><a href="#" class="btn-custom">Me Contrate</a></p>
+			            <p><a href="#contact-section" class="btn-custom">Me Contrate</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -75,12 +72,9 @@
 	          		<div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-	    						<span class="ion-ios-play play"></span>
-	    					</a>
 		          	<div class="text">
 			            <h1 class="mb-4 mt-3">Sou um <span>desenvolvedor</span> de Natal</h1>
-			            <p><a href="#" class="btn-custom">Me Contrate</a></p>
+			            <p><a href="#contact-section" class="btn-custom">Me Contrate</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -204,7 +198,7 @@
 						<h2>Estou <span>Disponível</span> Para Projetos</h2>
 					</div>
 					<div class="col-md-4 col-lg-3 d-flex align-items-center ftco-animate">
-						<p class="mb-0"><a href="#" class="btn btn-white py-4 px-5">Me Contrate</a></p>
+						<p class="mb-0"><a href="#contact-section" class="btn btn-white py-4 px-5">Me Contrate</a></p>
 					</div>
 				</div>
 			</div>
@@ -268,24 +262,23 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+            <form method="POST" action="send-email.php" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Seu Nome">
+                <input type="text" class="form-control" name="name" placeholder="Seu Nome">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Seu Email">
+                <input type="text" class="form-control" name="email" placeholder="Seu Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Assunto">
+                <input type="text" class="form-control" name="subject" placeholder="Assunto">
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
+                <textarea name="" id="" cols="30" rows="7" class="form-control" name="message" placeholder="Mensagem"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Enviar Mensagem" class="btn btn-primary py-3 px-5">
               </div>
-            </form>
-          
+            </form>          
           </div>
 
           <div class="col-md-6 d-flex">
@@ -304,9 +297,9 @@
               <h2 class="ftco-heading-2">Vamos Conversar</h2>
               <p>Me encontre nas redes sociais abaixo, podemos trocar uma ideia.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://twitter.com/edusrmt" target="_blank"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/cealvesarmento" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/edusrmt" target="_blank"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -314,11 +307,11 @@
             <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Links</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Início</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Sobre</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Habilidades</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projetos</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contato</a></li>
+                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Início</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>Sobre</a></li>
+                <li><a href="#skills-section"><span class="icon-long-arrow-right mr-2"></span>Habilidades</a></li>
+                <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projetos</a></li>
+                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contato</a></li>
               </ul>
             </div>
           </div>
@@ -326,9 +319,9 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Serviços</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Front-End</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Jogos</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Realidade Virtual</a></li>
+                <li><a><span class="icon-long-arrow-right mr-2"></span>Front-End</a></li>
+                <li><a><span class="icon-long-arrow-right mr-2"></span>Jogos</a></li>
+                <li><a><span class="icon-long-arrow-right mr-2"></span>Realidade Virtual</a></li>
               </ul>
             </div>
           </div>
@@ -338,8 +331,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">Natal, Rio Grande do Norte, Brasil</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(84) 9 9905-8130</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text"><span style="color: #0075f6; user-select: none;">eu</span>cealvesarmento@gmail.com</span></a></li>
+	                <li><a href="tel:84999058130"><span class="icon icon-phone"></span><span class="text">(84) 9 9905-8130</span></a></li>
+	                <li><a href="mailto:cealvesarmento@gmail.com"><span class="icon icon-envelope"></span><span class="text"><span style="color: #0075f6; user-select: none;">eu</span>cealvesarmento@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
